@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+    <style>
+        .main {
+            display: grid;
+            grid-template-columns: 30% repeat(1, 1fr);
+            height: 500px;
+            gap: 5px;
+
+        }
+
+        .left {
+            display: flex;
+            background-color: gray;
+            border-radius: 10px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .right {
+            display: flex;
+            background-color: antiquewhite;
+            border-radius: 10px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @media screen and (max-width:576px) {
+            .main {
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: 25% repeat(1, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="left">
+            <h4>Left</h4>
+        </div>
+        <div class="right">
+            <h4>Right</h4>
+        </div>
+    </div>
+</body>
+
+</html>

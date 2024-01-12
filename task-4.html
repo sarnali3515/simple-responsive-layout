@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr) 2fr;
+            border: 1px solid skyblue;
+            gap: 10px;
+            text-align: justify;
+            padding-right: 10px;
+        }
+
+        .container button {
+            border: none;
+            background-color: blue;
+            color: white;
+            padding: 5px;
+            border-radius: 2px;
+        }
+
+        .container img {
+            width: 100%;
+            height: 400px;
+        }
+
+        @media screen and (max-width: 576px) {
+            .container {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="image">
+            <img src="images/food.avif" alt="">
+        </div>
+        <div class="description">
+            <h2>Exclusive Diet</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione maxime voluptatem voluptates. Dicta nam
+                suscipit facere dolore in enim saepe praesentium eius ipsam debitis! Quas perspiciatis, sapiente dolores
+                quos suscipit perferendis provident ducimus voluptatum hic accusamus, consequuntur possimus praesentium
+                ipsum neque quisquam laborum quidem ipsam porro sunt necessitatibus adipisci! Quae!</p>
+            <button>Read More</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="image">
+            <img src="images/food.avif" alt="">
+        </div>
+        <div class="desccription">
+            <h2>Exclusive Diet</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed quasi obcaecati maxime odit totam aut enim!
+                Illum nihil, sunt non, facere commodi odio architecto laboriosam, blanditiis aperiam cumque fuga fugiat
+                est. Odit reprehenderit molestias inventore consectetur accusantium magni beatae, nam culpa, aut
+                distinctio quae fuga incidunt laudantium cum minus quia.</p>
+            <button>Read More</button>
+        </div>
+    </div>
+</body>
+
+</html>

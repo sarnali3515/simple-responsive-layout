@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            color: white;
+            gap: 5px;
+            height: 500px;
+        }
+
+        .first {
+            display: grid;
+            grid-template-rows: repeat(2, 1fr);
+            gap: 5px;
+        }
+
+        .last {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 5px;
+        }
+
+        .one {
+
+            background-color: crimson;
+        }
+
+        .two {
+
+            background-color: orange;
+        }
+
+        .three {
+            background-color: purple;
+
+        }
+
+        .four {
+            background-color: seagreen;
+        }
+
+        @media screen and (max-width: 576px) {
+
+            .container,
+            .last,
+            .first {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .last {
+                height: 200%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class=" one">
+            <h4>1</h4>
+        </div>
+        <div class="first">
+            <div class="number two">
+                <h4>2</h4>
+            </div>
+            <div class="last">
+                <div class="number three">
+                    <h4>3</h4>
+                </div>
+                <div class="number four">
+                    <h4>4</h4>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
